@@ -12,4 +12,4 @@ En este espacio, encontrarás algunos de nuestros desarrollos más destacados:
 - **Tienda de Vestidos** 👗: Plataforma de venta de vestidos con imágenes dinámicas y una interfaz elegante.  
 - **Gestión de Hípica** 🏇: Aplicación web para la administración de clases, caballos, alumnos y profesores en una hípica, con autenticación y gestión de horarios.  
 
-Cada proyecto refleja nuestras habilidades y crecimiento en el desarrollo web, siempre buscando mejorar y aprender nuevas tecnologías. 🚀
+Cada proyecto refleja nuestras habilidades y crecimiento en el desarrollo web, siempre buscando mejorar y aprender nuevas tecnologías. 
