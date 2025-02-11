@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiwoko - Tu Tienda de Mascotas</title>
+    <link rel="stylesheet" href="Básica.css">
+    <link rel="stylesheet" href="Diseño.css">
+    <link rel="stylesheet" href="Formulario.css">
+</head>
+
+<body>
+
+    <!-- El contenedor principal del encabezado -->
+    <header class="header">
+        <img src="logo.png" alt="Logo de Kiwoko" class="logo">
+        <h1 class="header-title">KIWOKO</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            
+            <div class="nav-icon-container">
+                <a href="#" onclick="showCart(); return false;">
+                    <img src="carrito.png" alt="Carrito de Compras" class="nav-icon">
+                </a>
+                <a href="#contacto">
+                    <img src="usuario.png" alt="Usuario" class="nav-icon">
+                </a>
+            </div>  
+        </nav>
+    </header>
+    
+
+    <!-- Contenido principal -->
+    <main class="section">
+        <section>
+            <h2 class="subtitle">Bienvenido a Kiwoko, tu tienda de confianza para mascotas</h2>
+            <p class="content-text">En <strong>Kiwoko</strong>, estamos comprometidos con ofrecer los mejores productos y servicios para el bienestar de tus mascotas. Nuestro objetivo es ayudarte a cuidar a tus compañeros de la mejor manera posible.</p>
+            <p class="content-text">Disponemos de una amplia variedad de productos para perros, gatos, peces, roedores y más, siempre con el foco en la calidad y seguridad para tus animales.</p>
+            
+            <h3 class="subtitle">¿Por qué elegir Kiwoko?</h3>
+            <ul>
+                <li><strong>Productos de calidad:</strong> Trabajamos con las mejores marcas para garantizar la satisfacción de tu mascota.</li>
+                <li><strong>Alimentos naturales:</strong> Disponemos de alimentos saludables y naturales para todas las especies.</li>
+                <li><strong>Juguetes y accesorios:</strong> Desde camas hasta juguetes interactivos para mantener a tu mascota feliz.</li>
+                <li><strong>Servicio especializado:</strong> Nuestro personal está capacitado para asesorarte en todo lo que necesites.</li>
+            </ul>
+
+            <h3 class="subtitle">Dirección</h3>
+            <p class="content-text">Nuestra tienda está ubicada en:</p>
+            <address class="address">
+                Calle Pintor Juan Guillermo 6, <br>
+                35011, Las Palmas de Gran Canaria, Las Palmas
+            </address>
+        </section>
+
+        <!-- Sección de Productos -->
+        <section id="productos" class="section">
+            <h2>Productos</h2>
+            <div class="product-container">
+                <!-- Tarjeta 1 -->
+                <div class="product-card">
+                    <img src="comida_perro.png" alt="Producto 1" class="product-image">
+                    <div class="product-info">
+                        <h2 class="product-title">Comida Premium</h2>
+                        <p class="product-description">Alimento natural, nutritivo y delicioso para perros de todas las razas.</p>
+                        <p class="product-price">25.99€</p>
+                        <button class="add-to-cart" data-id="1" data-name="Producto 1">Agregar al carrito</button>
+                    </div>
+                </div>
+        
+                <!-- Tarjeta 2 -->
+                <div class="product-card">
+                    <img src="gato_arenero.png" alt="Producto 2" class="product-image">
+                    <div class="product-info">
+                        <h2 class="product-title">Arenero Mediano</h2>
+                        <p class="product-description">Arenero higiénico y fácil de usar para mantener tu hogar limpio.</p>
+                        <p class="product-price">40.50€</p>
+                        <button class="add-to-cart" data-id="2" data-name="Producto 2">Agregar al carrito</button>
+                        
+                    </div>
+                </div>
+        
+                <!-- Tarjeta 3 -->
+                <div class="product-card">
+                    <img src="pez_acuario.png" alt="Producto 3" class="product-image">
+                    <div class="product-info">
+                        <h2 class="product-title">Acuario de Vidrio</h2>
+                        <p class="product-description">Acuario compacto con iluminación LED ideal para peces de agua dulce.</p>
+                        <p class="product-price">99.99€</p>
+                        <button class="add-to-cart" data-id="3" data-name="Producto 3">Agregar al carrito</button>
+                        
+                    </div>
+                </div>
+        
+                <!-- Tarjeta 4 -->
+                <div class="product-card">
+                    <img src="roedor_casa.png" alt="Producto 4" class="product-image">
+                    <div class="product-info">
+                        <h2 class="product-title">Casa de Madera</h2>
+                        <p class="product-description">Un refugio bonito, acogedor y seguro para tus roedores.</p>
+                        <p class="product-price">20.99€</p>
+                        <button class="add-to-cart" data-id="4" data-name="Producto 4">Agregar al carrito</button>
+                        
+                    </div>
+                </div>
+
+                <!-- Tarjeta 5 -->
+                <div class="product-card">
+                    <img src="perro_juguete.png" alt="Producto 5" class="product-image">
+                    <div class="product-info">
+                        <h2 class="product-title">Juguete Interactivo</h2>
+                        <p class="product-description">Juguete que estimula la mente de tu perro y lo mantiene entretenido.</p>
+                        <p class="product-price">15.99€</p>
+                        <button class="add-to-cart" data-id="5" data-name="Producto 5">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 6 -->
+                <div class="product-card">
+                    <img src="gato_cama.png" alt="Producto 6" class="product-image">
+                    <div class="product-info">
+                        <h2 class="product-title">Cama Peluda</h2>
+                        <p class="product-description">Cama suave y cómoda para que tu gato descanse y se relaje.</p>
+                        <p class="product-price">30.00€</p>
+                        <button class="add-to-cart" data-id="6" data-name="Producto 6">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="section clearfix">
+            <div class="form-container">
+                <h2>Contacto</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailContact">Correo electrónico:</label>
+                        <input type="email" id="emailContact" name="emailContact" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d28150.1768105351!2d-15.453924023044433!3d28.122974591579823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0xc4095c2da35ff71%3A0xf304f40492a1ff9d!2sC.%20Pintor%20Juan%20Guillermo%2C%206%2C%2035011%20Las%20Palmas%20de%20Gran%20Canaria%2C%20Las%20Palmas!3m2!1d28.125648599999998!2d-15.438384699999999!5e0!3m2!1ses!2ses!4v1728405774421!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+            </div>
+        </section>    
+    </main>
+
+    <!-- Modal del carrito -->
+    <div id="cartModal">
+        <div class="modal-content">
+            <h2>Carrito de Compras</h2>
+            <ul class="cart-items" id="cartItems"></ul>
+            <p class="total-price" id="totalPrice">Total: 0€</p>
+            <button class="empty-cart-btn" onclick="clearCart()">Vaciar Carrito</button>
+            <button class="close-btn" onclick="closeCart()">Cerrar</button>
+        </div>
+    </div>  
+
+    <script src="cart.js"></script>
+    <script src="formulario.js"></script>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        © 2024 Kiwoko - Todos los derechos reservados
+    </footer>
+
+</body>
+
+</html>
