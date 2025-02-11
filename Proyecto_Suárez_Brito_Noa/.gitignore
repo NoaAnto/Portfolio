@@ -1,0 +1,21 @@
+# Ignorar archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar carpetas de editores de código
+.vscode/
+.idea/
+
+# Ignorar archivos de caché o logs (si en el futuro generas alguno)
+*.log
+*.cache
+
+# Ignorar dependencias (en caso de usar npm o composer)
+node_modules/
+vendor/
+
+# Ignorar imágenes si no son necesarias
+# *.png
+# *.jpg
+# *.jpeg
+# *.gif
